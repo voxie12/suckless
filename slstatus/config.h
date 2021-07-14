@@ -64,11 +64,16 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument */
-	{ run_command, " 摒 %s | ",    "curl -s 'wttr.in?format=%C+%t'" },
-	{ netspeed_rx, " %sB/s | ",    "enp4s0" },
-	{ run_command, " %s | ",    "checkupdates | wc -l" },
-	{ cpu_perc, " %s%% | ",    NULL },
-	{ ram_perc, " %s%% | ",    NULL },
-	{ datetime, " %s",           "%a, %d %b at %R" },
+	/* function     format          argument */
+	{ run_command,  " 摒 %s | ",    "curl -s 'wttr.in?format=%C+%t'" },
+	{ netspeed_rx,  " %sB/s | ",   "enp4s0" },
+	/*{ netspeed_rx, " %sB/s | ",   "wlp3s0" }*/,
+	/*{ wifi_essid,   " %s ",      "wlp3s0" },*/
+	/*{ wifi_perc,    "%s | ",      "wlp3s0" },*/
+	{ run_command,  " %s | ",      "checkupdates | wc -l" },
+	{ cpu_perc,     " %s%% | ",    NULL },
+	{ ram_perc,     " %s%% | ",    NULL },
+	/*{ battery_perc, " %s%% | ",    BAT0 },*/
+	{ datetime,     " %s",         "%a, %d %b at %R" },
+	/*{ datetime,     " %s",         "%d/%m/%y - %R" }, */
 };
