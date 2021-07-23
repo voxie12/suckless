@@ -28,14 +28,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "mpv",     NULL,       NULL,       0,            1,           -1 },
+	{ "mpv",      NULL,       NULL,       0,            1,           -1 },
 	{ "Sxiv",     NULL,       NULL,       0,            1,           -1 },
 	{ "st",       NULL,       NULL,       1,            0,           -1 },
 	{ "firefox",  NULL,       NULL,       2,            0,           -1 },
-	{ "Pcmanfm",  NULL,       NULL,       3,            0,           -1 },
-	{ "qBittorrent", NULL,       NULL,       3,            0,           -1 },
-	{ "TelegramDesktop", NULL,       NULL,       4,            0,           -1 },
 };
 
 /* layout(s) */
@@ -76,10 +72,10 @@ static const char *dmconfedit[]  = { "dm-confedit", NULL };
 #include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = dmconfedit} },
+	{ MODKEY,                       XK_e,      spawn,          {.v = dmconfedit} },
 	{ MODKEY,                       XK_s,      spawn,          {.v = dmbookmark} },
 	{ MODKEY,                       XK_x,      spawn,          {.v = betterlockscreen} },
-	{ MODKEY,                       XK_e,      spawn,          {.v = emacsclient} },
+	{ MODKEY|ShiftMask,                       XK_e,      spawn,          {.v = emacsclient} },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
