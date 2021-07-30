@@ -64,7 +64,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *emacsclient[]  = { "emacsclient", "-c", "-a", "emacs", NULL };
-static const char *betterlockscreen[]  = { "betterlockscreen", "-l", "dim", "-t", "Don't touch my machine!", NULL };
+static const char *slock[]  = { "slock", "-m", "go away", NULL };
 static const char *dmbookmark[]  = { "dmbookmark", NULL };
 static const char *dmconfedit[]  = { "dm-confedit", NULL };
 
@@ -74,7 +74,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_e,      spawn,          {.v = dmconfedit} },
 	{ MODKEY,                       XK_s,      spawn,          {.v = dmbookmark} },
-	{ MODKEY,                       XK_x,      spawn,          {.v = betterlockscreen} },
+	{ MODKEY,                       XK_z,      spawn,          {.v = slock} },
 	{ MODKEY|ShiftMask,                       XK_e,      spawn,          {.v = emacsclient} },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },

@@ -66,13 +66,14 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function     format          argument */
 	{ run_command,  " 摒 %s | ",    "curl -s 'wttr.in?format=%C+%t'" },
-	{ netspeed_rx,  " %sB/s ",   "enp4s0" },
-	{ disk_used,  "[ %s / ",   "/" },
-	{ disk_total,  " %s ] ",   "/" },
+	{ netspeed_rx,  " %sB/s | ",   "enp4s0" },
+	/*{ disk_used,  "[ %s /",   "/" },*/
+	/*{ disk_total,  " %s ] ",   "/" },*/
+	{ disk_perc,  " %s%% | ",   "/" },
 	/*{ netspeed_rx, " %sB/s | ",   "wlp3s0" },*/
 	/*{ wifi_essid,   " %s ",      "wlp3s0" },*/
 	/*{ wifi_perc,    "%s | ",      "wlp3s0" },*/
-	{ run_command,  " %s | ",      "checkupdates | wc -l" },
+	{ run_command,  " %s | ",      "checkupdates2" },
 	{ cpu_perc,     " %s%% | ",    NULL },
 	{ ram_perc,     " %s%% | ",    NULL },
 	/*{ battery_perc, " %s%% | ",    BAT0 },*/
