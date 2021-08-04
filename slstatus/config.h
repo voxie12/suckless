@@ -73,7 +73,7 @@ static const struct arg args[] = {
 	/*{ netspeed_rx, " %sB/s | ",   "wlp3s0" },*/
 	/*{ wifi_essid,   " %s ",      "wlp3s0" },*/
 	/*{ wifi_perc,    "%s | ",      "wlp3s0" },*/
-	{ run_command,  " %s | ",      "checkupdates2" },
+	{ run_command,  " %s | ",      "checkupdates | wc -l" },
 	{ cpu_perc,     " %s%% | ",    NULL },
 	{ ram_perc,     " %s%% | ",    NULL },
 	/*{ battery_perc, " %s%% | ",    BAT0 },*/
