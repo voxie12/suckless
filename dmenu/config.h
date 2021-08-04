@@ -1,5 +1,8 @@
-/* See LICENSE file for copyright and license details. */
-/* Default settings; can be overriden by command line. */
+/*      _                             */
+/*   __| |_ __ ___   ___ _ __  _   _  */
+/*  / _` | '_ ` _ \ / _ \ '_ \| | | | */
+/* | (_| | | | | | |  __/ | | | |_| | */
+/*  \__,_|_| |_| |_|\___|_| |_|\__,_| */
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */

@@ -1,4 +1,9 @@
-/* user and group to drop privileges to */
+ /*      _            _    */
+/*  ___| | ___   ___| | __ */
+/* / __| |/ _ \ / __| |/ / */
+/* \__ \ | (_) | (__|   <  */
+/* |___/_|\___/ \___|_|\_\ */
+
 static const char *user  = "nobody";
 static const char *group = "wheel";
 

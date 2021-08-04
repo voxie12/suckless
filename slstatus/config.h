@@ -1,4 +1,9 @@
-/* See LICENSE file for copyright and license details. */
+/*      _     _        _              */
+/*  ___| |___| |_ __ _| |_ _   _ ___  */
+/* / __| / __| __/ _` | __| | | / __| */
+/* \__ \ \__ \ || (_| | |_| |_| \__ \ */
+/* |___/_|___/\__\__,_|\__|\__,_|___/ */
+
 
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
