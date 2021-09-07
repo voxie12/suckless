@@ -71,7 +71,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function     format          argument */
 	{ run_command,  " 摒 %s | ",    "curl -s 'wttr.in?format=%C+%t'" },
-	{ netspeed_rx,  " %sB/s | ",   "enp4s0" },
+	{ netspeed_rx,  " %sB/s | ",   "eth0" },
 	/*{ disk_used,  "[ %s /",   "/" },*/
 	/*{ disk_total,  " %s ] ",   "/" },*/
 	{ disk_perc,  " %s%% | ",   "/" },
